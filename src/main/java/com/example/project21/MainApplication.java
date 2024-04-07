@@ -41,7 +41,7 @@ public class MainApplication extends Application {
         firstField.setLayoutY(13);
         firstField.setPrefSize(250, 75);
         firstField.setPromptText("1");
-        firstField.setStyle("-fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5); -fx-background-radius: 10;-fx-focus-color: transparent;");
+        firstField.setStyle("-fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5); -fx-background-radius: 10;-fx-focus-color: red;");
         leftPane1.getChildren().add(firstField);
 
         Pane leftPane2 = new Pane();
@@ -51,7 +51,7 @@ public class MainApplication extends Application {
         secondField.setLayoutY(13);
         secondField.setPrefSize(250, 75);
         secondField.setPromptText("2");
-        secondField.setStyle("-fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5); -fx-background-radius: 10;-fx-focus-color: transparent;");
+        secondField.setStyle("-fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5); -fx-background-radius: 10;-fx-focus-color: lime;");
         leftPane2.getChildren().add(secondField);
 
         Pane leftPane3 = new Pane();
@@ -61,7 +61,7 @@ public class MainApplication extends Application {
         thirdField.setLayoutY(13);
         thirdField.setPrefSize(250, 75);
         thirdField.setPromptText("3");
-        thirdField.setStyle("-fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5); -fx-background-radius: 10;-fx-focus-color: transparent;");
+        thirdField.setStyle("-fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5); -fx-background-radius: 10;-fx-focus-color: blue;");
         leftPane3.getChildren().add(thirdField);
 
         leftVBox.getChildren().addAll(leftPane1, leftPane2, leftPane3);
