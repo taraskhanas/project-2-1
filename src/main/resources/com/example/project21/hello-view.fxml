@@ -1,16 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.project21.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #313335;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project21.HelloController">
+    <children>
+        <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="300.0" prefWidth="550.0" style="-fx-background-color: #232428; -fx-background-radius: 10;">
+            <children>
+                <HBox prefHeight="300.0" prefWidth="550.0">
+                    <children>
+                        <VBox prefHeight="300.0" prefWidth="275.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="275.0">
+                                    <children>
+                                        <TextField fx:id="firstField" alignment="CENTER" layoutX="13.0" layoutY="13.0" prefHeight="75.0" prefWidth="250.0" promptText="1" style="-fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5); -fx-background-radius: 10;-fx-focus-color: red;">
+                                            <cursor>
+                                                <Cursor fx:constant="DEFAULT" />
+                                            </cursor>
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="26.0" />
+                                            </font>
+                                        </TextField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </Pane>
+                                <Pane prefHeight="100.0" prefWidth="275.0">
+                                    <children>
+                                        <TextField fx:id="secondField" alignment="CENTER" layoutX="13.0" layoutY="13.0" prefHeight="75.0" prefWidth="250.0" promptText="2" style="-fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5); -fx-background-radius: 10;-fx-focus-color: lime;">
+                                            <font>
+                                                <Font size="26.0" />
+                                            </font>
+                                        </TextField>
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="100.0" prefWidth="275.0">
+                                    <children>
+                                        <TextField fx:id="thirdField" alignment="CENTER" layoutX="13.0" layoutY="13.0" prefHeight="75.0" prefWidth="250.0" promptText="3" style="-fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5); -fx-background-radius: 10;-fx-focus-color: blue;">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="26.0" />
+                                            </font>
+                                        </TextField>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="300.0" prefWidth="275.0">
+                            <children>
+                                <Pane prefHeight="100.0" prefWidth="275.0">
+                                    <children>
+                                        <Button fx:id="copyFirstToSecondButton" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="13.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" style="-fx-background-color: #1a1a1a; -fx-border-color: #1a1a1a; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 3; -fx-cursor: HAND; -fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5);" text="1 &gt; 2" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="26.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="100.0" prefWidth="275.0">
+                                    <children>
+                                        <Button fx:id="copySecondToThirdButton" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="13.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" style="-fx-background-color: #1a1a1a; -fx-border-color: #1a1a1a; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 3; -fx-cursor: HAND; -fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5);" text="2 &gt; 3" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="26.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </Pane>
+                                <Pane prefHeight="100.0" prefWidth="275.0">
+                                    <children>
+                                        <Button fx:id="copyThirdToFirstButton" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="13.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" style="-fx-background-color: #1a1a1a; -fx-border-color: #1a1a1a; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 3; -fx-cursor: HAND; -fx-effect: dropshadow(gaussian, #000000, 20, 0, 0, 5);" text="3 &gt; 1" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Microsoft Sans Serif" size="26.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
